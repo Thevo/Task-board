@@ -1,0 +1,22 @@
+{
+  "name": "trello-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html --no-cache --out-dir=build --no-source-maps"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "sass": "^1.26.3"
+  },
+  "dependencies": {
+    "norm": "^4.0.4",
+    "normalize.css": "^8.0.1",
+    "uuid": "^7.0.3"
+  }
+}

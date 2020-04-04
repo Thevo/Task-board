@@ -1,0 +1,52 @@
+.nav {
+    @include container;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+
+    &__container--left {
+        display: flex;
+        align-items: center;
+    }
+
+    &__home-link {
+        margin-right: 16px;
+    }
+
+    &__search-field {
+        position: relative;
+    }
+
+    &__search {
+        max-width: 200px;
+        height: 32px;
+        background-color: #f2f2f2;
+        border-radius: 6px;
+    }
+
+    &__search-button {
+        position: absolute;
+        right: 12px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &__container--right {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__create {
+        margin-right: 8px;
+    }
+
+    &__info {
+        margin-right: 8px;
+    }
+
+    &__user-avatar {
+        margin-left: 20px;
+    }
+}
