@@ -4,13 +4,11 @@ import 'normalize.css/normalize.css'
 import './src/sass/style.scss'
 
 window.onload = function() {
-    function checkId() {
-        if (localStorage.getItem('id') === null) {
-            localStorage.setItem('id', uuidv4())
-        } else {
-            new Board(localStorage.getItem('id')).render()
-        }
+    if (localStorage.getItem('id') === null) {
+        const id = uuidv4()
+        localStorage.setItem('id', id)
+        new Board(id).newBoard()
+    } else {
+        new Board(localStorage.getItem('id')).fetchBoard()
     }
-
-    checkId()
 }

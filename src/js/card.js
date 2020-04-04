@@ -2,11 +2,10 @@ export default class Card {
     constructor(title, content) {
         this.title = title
         this.content = content
-        console.log(this)
+        // console.log(this)
     }
 
-    createCard() {
-        const ul = document.querySelector('.board__list')
+    getCard() {
         const li = document.createElement('li')
         const h3 = document.createElement('h3')
         const p = document.createElement('p')
@@ -20,12 +19,13 @@ export default class Card {
 
         li.appendChild(h3)
         li.appendChild(p)
-        ul.appendChild(li)
+
+        return li
     }
 
     // TODO
     deleteCard() {}
-    
+
     // TODO
     updateCard() {}
 }

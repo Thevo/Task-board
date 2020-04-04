@@ -1,9 +1,12 @@
 .main {
     @include container;
+    overflow-x: visible;
 }
 
 .board {
     width: 300px;
+    display: inline-block;
+    margin-right: 16px;
 
     &__header {
         display: flex;
@@ -17,12 +20,14 @@
         margin-bottom: 8px;
     }
 
-    &__opt {}
+    &__opt {
+    }
 
-    &__list {}
+    &__list {
+    }
 
     &__card {
-        border: 1px solid #D9D9D9;
+        border: 1px solid #d9d9d9;
         border-radius: 8px;
         padding: 16px 12px;
         margin-bottom: 10px;
@@ -31,7 +36,7 @@
     &__card-title {
         font-size: 16px;
         line-height: 140%;
-        color: #1A1A1A;
+        color: #1a1a1a;
         margin: 0px 8px;
         margin-bottom: 8px;
     }
@@ -44,14 +49,15 @@
     }
 
     &__add-card {
+        max-width: 300px;
         padding: 22px;
-        display: block;
+        display: inline-block;
         width: 100%;
         font-size: 14px;
         line-height: 16px;
         letter-spacing: 0.01em;
         text-align: center;
-        border: 1px dashed #D9D9D9;
+        border: 1px dashed #d9d9d9;
         border-radius: 8px;
     }
 
@@ -63,7 +69,7 @@
         resize: vertical;
         padding: 5px;
         border: none;
-        border-bottom: 1px solid #CCCCCC;
+        border-bottom: 1px solid #cccccc;
         font-size: 13px;
         line-height: 147.4%;
     }
@@ -71,11 +77,11 @@
     &__save-card {
         padding: 6px 12px;
         margin-top: 10px;
-        background-color: #066AFF;
+        background-color: #066aff;
         border-radius: 4px;
         font-size: 13px;
         line-height: 147.4%;
-        color: #FFFFFF;
+        color: #ffffff;
         margin-left: auto;
         display: block;
         cursor: pointer;
